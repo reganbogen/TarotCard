@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <script src="js/tarot.js"></script>
+  
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- ScrollReveal Experimentin' -->
+  <script src="https://unpkg.com/scrollreveal"></script>  
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  
+  <title>My Fortune</title>
+  <div id="particles-js" class="container"></div>
+</head>
+
+<main class="tarotScroll tarotBody">
+    
+    <header>
+      <div class="container">
+       <h1 id="tarotTitle">My Fortune</h1>
+      </div>
+    </header>
+  
+    <body>
+      <div class="container mx-auto" id="imgDiv">
+      
+          <div class="container">
+            <img src="card/spacer.gif" onclick="tellFortune()" id="myFortune" height=526px width=300px>
+          </div>                                                                         
+          <div class="container">
+            <p id="words"></p>
+          </div>
+      
+      </div>
+      
+      <!--PARTICLES scripts-->
+      <script src="js/particles.min.js"></script>
+      <script src="js/app.js"></script>
+      <!--SCROLLreveal-->
+      <script>
+        ScrollReveal().reveal('.tarotScroll');
+      </script>
+      
+    </body>
+</main>
+</html>

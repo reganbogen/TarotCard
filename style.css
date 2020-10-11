@@ -1,0 +1,88 @@
+/* -- LAYOUT -- */
+html {
+  background-color: black;
+  font-family: "Beth Ellen", "VT323", monospace;
+}
+
+body {
+  background-color: black;
+}
+
+/* -- PARTICLES -- */
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* -- ANIMATIONS: tarot --*/
+@keyframes colorShadow {
+  from {
+    filter: hue-rotate();
+  }
+  to {
+    filter: hue-rotate(1440deg);
+  }
+}
+
+/* -- TAROT CARD IMG -- */
+#myFortune {
+  display: block;
+  margin: auto;
+  animation: colorShadow 10s linear infinite;
+  z-index: 2;
+  box-shadow: 0px 0px 70px 0px yellow;
+  height: 526px;
+  width: 300px;
+}
+
+/* -- ANIMATIONS: tarot --*/
+@keyframes colorShadow {
+  from {
+    filter: hue-rotate();
+  }
+  to {
+    filter: hue-rotate(1440deg);
+  }
+}
+
+/* TITLE: tarot */
+#tarotTitle {
+  font-family: "IM Fell English", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: darkgoldenrod;
+}
+
+/* Words for Card Descriptions */
+#words {
+  border: 5px inset goldenrod;
+  color: darkgoldenrod;
+  font-family: "IM Fell English", serif;
+  margin: 2% 20%;
+  text-align: center;
+}
+
+/*=== Media Queries | tarot.HTML === */
+@media (min-width: 1000px) {
+  .tarotBody {
+    margin: 5% auto;
+  }
+}
+@media (max-width: 700px) {
+    #words {
+    margin: 0 3%;
+  }
+
+  #myFortune {
+    height: 391px;
+    width: 223px;
+    margin: 0 auto;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */
